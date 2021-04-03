@@ -11,7 +11,7 @@
  * 
  * @author Bhao
  * @link https://dwd.moe/
- * @version 1.0.5
+ * @version 1.1.0
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
@@ -19,7 +19,7 @@ require_once("includes/setting.php");
 require_once("includes/owo.php");
 
 define("THEME_NAME", "Cuckoo");
-define("THEME_VERSION", "1.0.5");
+define("THEME_VERSION", "1.1.0");
 
 function themeFields($layout) { 
   /* 文章封面设置  */
@@ -113,7 +113,7 @@ function staticFiles($content, $type = 0){
   if($setting == 'local') {
     $output = Helper::options()->themeUrl.'/assets/'.$content;
   }elseif($setting == 'jsdelivr') {
-    $output = 'https://cdn.jsdelivr.net/gh/Bhaoo/Cuckoo@'.THEME_VERSION.'/assets/'.$content;
+    $output = 'https://cdn.jsdelivr.net/gh/love-moon/Cuckoo@'.THEME_VERSION.'/assets/'.$content;
   }elseif($setting == '9jojo') {
     $output = '//cdn.9jojo.cn/Cuckoo/'.THEME_VERSION.'/'.$content;
   }elseif($setting == 'cdn') {
@@ -231,7 +231,7 @@ function otherJs(){
     $string = '<script>';
     $string .= (Helper::options()->statisticsBaidu) ? "var _hmt = _hmt || [];(function() {var hm = document.createElement('script');hm.src = 'https://hm.baidu.com/hm.js?". Helper::options()->statisticsBaidu ."';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(hm, s);})();" : '';
     $string .= (Helper::options()->qrcode && in_array('open', Helper::options()->qrcode)) ? "qrcode(true);" : '';
-    $string .= (!Helper::options()->describe) ? "$.getJSON('https://v1.hitokoto.cn/?encode=json&select=%23hitokoto', function (json) { $('#hitokoto').html(json.hitokoto)});" : '';
+    $string .= (!Helper::options()->describe) ? "$.getJSON('https://v1.hitokoto.cn/?encode=json&select=%23hitokoto&c=a&c=d', function (json) { $('#hitokoto').html(json.hitokoto)});" : '';
     $string .= ($brightTime_arr) ? "var nowHour=new Date().getHours();if(nowHour>".$brightTime_arr[0]." || nowHour<".$brightTime_arr[1]."){darkContent('".$brightTime_arr[2]."')};" : '';
     $string .= (Helper::options()->otherJs) ? Helper::options()->otherJs : '';
     $string .= '</script>';
