@@ -72,14 +72,6 @@ class Cuckoo_Setting
             <td>' . THEME_VERSION . '</td>
           </tr>
           <tr>
-            <td>云端版本</td>
-            <td><span id="verison"></span></td>
-          </tr>
-          <tr>
-            <td>公告</td>
-            <td><span id="notice"></span></td>
-          </tr>
-          <tr>
             <td>功能</td>
             <td>
               <form class="protected" action="?CuckooBackup" method="post" style="display: block!important">
