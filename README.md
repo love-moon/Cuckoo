@@ -26,6 +26,10 @@
 - 自定义静态文件源 / 随机图源 
 - 自定义抽屉导航栏
 
+## 目标
+- 干掉B站相关
+- 干掉所有border-radius
+
 ## 最后
 
 1. 欢迎各位加入 [主题交流群](//shang.qq.com/wpa/qunwpa?idkey=ceaeca22d995870dc4e5d35ee0b98542c337c99f0955b648917dc18957818bb4)
