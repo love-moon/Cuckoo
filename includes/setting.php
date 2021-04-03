@@ -128,12 +128,7 @@ function themeConfig($form) {
     $config->module(
       $config->isPluginAvailable('Links').
       $config->text('<h2>友链页面</h2>').
-      $config->input('linksIndexNum', '主页友链展示个数', '在这里填写主页友链最多展示个数，默认为 0（则不显示），推荐设置为 10 个', 0).
-      $config->text('<h2>B站追番列表</h2><small>（需要提前创建好独立页面哦～第一次加载会比较慢，缓存后速度就很快啦！注意：需要在隐私设置将追番追剧设置为公开，否则无法正常使用！）</small>').
-      $config->input('BilibiliUid', 'B站UID', '请认真填写好，记得检查别填错啦！').
-      $config->input('CacheTime', '缓存时间', '单位为“秒”，不会填写可留空，默认为一天。').
-      $config->input('Amout', '展示数量', '需要展示的番剧数量，默认为 100 个').
-      $config->textarea('HideMedia', '隐藏番剧', '输入番剧id，多个id用英文逗号隔开，就可以隐藏你所不想展示的番剧啦！')
+      $config->input('linksIndexNum', '主页友链展示个数', '在这里填写主页友链最多展示个数，默认为 0（则不显示），推荐设置为 10 个', 0)
     ,3)
   );
 }
